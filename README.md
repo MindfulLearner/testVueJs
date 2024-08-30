@@ -2,9 +2,13 @@
 
 ## Cosa abbiamo fatto? 
 
-abbiamo trasformato il codice html con script js al framework VueJs
+Abbiamo trasformato il codice HTML con script JavaScript nel framework Vue.js. Abbiamo separato i file 3 file 
+- js contentente le logiche, 
+-data contenente array di dati, 
+-html
+, rendendoli più leggibili, e utilizzato le direttive v-model, v-on:click e v-for di Vue.js.
 
-codice originale mandato da Michele su comunicazioni
+Icodice originale mandato da Michele su comunicazioni
 
 ```html
 <!DOCTYPE html>
