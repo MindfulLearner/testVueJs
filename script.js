@@ -2,25 +2,35 @@
 
 const { createApp } = Vue;
 
+// abbiamo usato const app per poter debuggare e capire la reattivita su console browser
 const app = createApp (
     {
         data() {
             return {
+                // definiamo i nostri dati
                 i: 0,
+                // richiamiamo attraverso script in html contacts cosi da poter reperire i dati array
                 contatti : contacts,
+
+                // creiamo due dati per poter usare vmodel
                 nuovoNome: '',
                 nuovoTelefono: '',
             }
         },
         methods: {
+            // funzione debug entrata in file js e funzionamento
             ciaoMondo() {
                 console.log('');
             },
+            // funzione che aggiunge tramite vmodel su html e click dei bottoni
             aggiungiNuovoContatto() {
                 console.log(this.nuovoNome);
                 console.log(this.nuovoTelefono);
+                // se this nuovoNome e nuovoTelefono hanno una stringa allora pusha
                 if (this.nuovoNome && this.nuovoTelefono) {
+                    // pushamo su array contatti i nuovi dati che restituiranno un nuovo card su html
                     this.contatti.push({ nome: this.nuovoNome, telefono: this.nuovoTelefono });
+                    // reset degli spazi input per poter dinserire nuovi input
                     this.nuovoNome = '';
                     this.nuovoTelefono = '';
                 }

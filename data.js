@@ -1,4 +1,4 @@
-// data js}
+// data js, viene iniettato sul file js script
 
 
 const contacts = [

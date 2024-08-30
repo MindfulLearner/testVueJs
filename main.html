@@ -21,11 +21,14 @@
         </style>
     </head>
     <body>
+        <!-- inserito div con id app -->
         <div id="app">
+            <!--bottone per il debug ciao mondo-->
             <button @click = "ciaoMondo" type="button">idwadawdawdawdawdaw</button>
             <div class="container mt-4">
                 <h1 class="text-center mb-4">Rubrica telefonica</h1>
                 <div id="rubrica" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-- inserito-->
                     <div class="col" v-for = "(contatto, index) in contatti" >
                         <div class="card">
                             <div class="card-body">
@@ -47,11 +50,14 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
+            <!--vmodel serve per poter reperire nel nostro caso il valore scritto all'interno del input da cui attraverso il bottone @click sotto andiamo a pushare in array-->
                             <input v-model = "nuovoNome"  type="text" id="nuovoNome" class="form-control mb-3" placeholder="Nome" autocomplete="off">
+                            <!--stessa cosa qui-->
                             <input v-model = "nuovoTelefono" type="tel" id="nuovoTelefono" class="form-control" placeholder="Telefono" autocomplete="off"> 
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+            <!--bottone per il bottone click che richiama aggiungi funzione in script jsnuovo contatto-->
                             <button @click = "aggiungiNuovoContatto()" type="button" class="btn btn-primary">Salva</button>
                         </div>
                     </div>
