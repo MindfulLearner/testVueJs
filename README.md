@@ -1,5 +1,7 @@
 # swag
 
+- aggiunti commenti
+
 ## Cosa abbiamo fatto? 
 
 Abbiamo trasformato il codice HTML con script JavaScript nel framework Vue.js. Abbiamo separato i file 3 file 
